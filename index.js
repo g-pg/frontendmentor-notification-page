@@ -61,7 +61,7 @@ let notifArray = [
 		profilePicturePath: "assets/images/avatar-kimberly-smith.webp",
 		event: events.commentedUserPic,
 		time: "1 week",
-		picture: "/assets/images/image-chess.webp",
+		picture: "assets/images/image-chess.webp",
 		read: true,
 		rendered: false,
 		upToDate: false,
