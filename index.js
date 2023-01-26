@@ -127,7 +127,7 @@ function renderNotif() {
 
 			let picturePath = "";
 			if (el.picture) {
-				picturePath = `<a href="#" class="notif-picture-link"><img src="/assets/images/image-chess.webp"></a>`;
+				picturePath = `<a href="#" class="notif-picture-link"><img src=${el.picture} alt="Picture commented"></a>`;
 			}
 
 			newLi.innerHTML = `
