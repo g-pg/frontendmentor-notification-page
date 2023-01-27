@@ -20,7 +20,6 @@ let notifArray = [
 		time: "1m",
 		read: false,
 		rendered: false,
-		upToDate: false,
 	},
 
 	{
@@ -30,7 +29,6 @@ let notifArray = [
 		time: "5m",
 		read: false,
 		rendered: false,
-		upToDate: false,
 	},
 
 	{
@@ -41,7 +39,6 @@ let notifArray = [
 		time: "1 day",
 		read: false,
 		rendered: false,
-		upToDate: false,
 	},
 
 	{
@@ -53,7 +50,6 @@ let notifArray = [
 			"Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.",
 		read: true,
 		rendered: false,
-		upToDate: false,
 	},
 
 	{
@@ -64,7 +60,6 @@ let notifArray = [
 		picture: "assets/images/image-chess.webp",
 		read: true,
 		rendered: false,
-		upToDate: false,
 	},
 
 	{
@@ -75,7 +70,6 @@ let notifArray = [
 		time: "2 weeks",
 		read: true,
 		rendered: false,
-		upToDate: false,
 	},
 
 	{
@@ -86,16 +80,14 @@ let notifArray = [
 		time: "2 weeks",
 		read: true,
 		rendered: false,
-		upToDate: false,
 	},
 ];
 
 function renderNotif() {
 	let newLi;
 	notifArray.forEach((el, index) => {
-		if (el.rendered === false || el.upToDate === false) {
+		if (el.rendered === false) {
 			el.rendered = true;
-			el.upToDate = true;
 
 			newLi = document.createElement("li");
 
